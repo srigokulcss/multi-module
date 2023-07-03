@@ -122,7 +122,7 @@ artifactory {
             // This is how we tell the Artifactory Plugin which artifacts should be
             // published to Artifactory.
             publications('mavenJava')
-            publishArtifacts = true
+            publishArtifacts = false
             // Properties to be attached to the published artifacts.
             properties = ['qa.level': 'basic', 'dev.team' : 'core']
             publishPom = true // Publish generated POM files to Artifactory (true by default)
