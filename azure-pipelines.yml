@@ -12,6 +12,19 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+# - task: JFrogGradle@1
+#   inputs:
+#     gradleBuildFile: 'build.gradle'
+#     tasks: 'artifactoryPublish'
+#     artifactoryResolverService: 'arti'
+#     sourceRepo: 'sri-android-gradle-dev'
+#     artifactoryDeployerService: 'arti'
+#     targetRepo: 'sri-android-gradle-dev-local'
+#     useWrapper: true
+#     usesPlugin: true
+#     collectBuildInfo: true
+#     buildName: '$(Build.DefinitionName)'
+#     buildNumber: '$(Build.BuildNumber)'
 - task: JFrogGradle@1
   inputs:
     gradleBuildFile: 'build.gradle'
@@ -19,13 +32,11 @@ steps:
     artifactoryResolverService: 'arti'
     sourceRepo: 'sri-android-gradle-dev'
     artifactoryDeployerService: 'arti'
-    targetRepo: 'sri-android-gradle-dev-local'
-    useWrapper: true
+    targetRepo: 'sri-android-gradle-dev'
     usesPlugin: true
-    collectBuildInfo: true
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
-
+    useWrapper: true
+    deployMavenDesc: false
+    deployIvyDesc: false
     
 - task: JFrogPublishBuildInfo@1
   inputs:
