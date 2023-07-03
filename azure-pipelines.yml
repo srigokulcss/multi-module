@@ -35,8 +35,8 @@ steps:
     targetRepo: 'sri-multi-modile-gradle-dev'
     usesPlugin: true
     useWrapper: true
-    deployMavenDesc: false
-    deployIvyDesc: false
+    deployMavenDesc: true
+    deployIvyDesc: true
     
 - task: JFrogPublishBuildInfo@1
   inputs:
