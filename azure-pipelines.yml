@@ -30,9 +30,9 @@ steps:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
     artifactoryResolverService: 'arti'
-    sourceRepo: 'sri-android-gradle-dev'
+    sourceRepo: 'sri-multi-modile-gradle-dev'
     artifactoryDeployerService: 'arti'
-    targetRepo: 'sri-android-gradle-dev'
+    targetRepo: 'sri-multi-modile-gradle-dev'
     usesPlugin: true
     useWrapper: true
     deployMavenDesc: false
