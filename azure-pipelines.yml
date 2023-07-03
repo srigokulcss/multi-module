@@ -33,10 +33,10 @@ steps:
     sourceRepo: 'sri-multi-modile-gradle-dev'
     artifactoryDeployerService: 'arti'
     targetRepo: 'sri-multi-modile-gradle-dev'
-    usesPlugin: true
+    usesPlugin: false
     useWrapper: true
-    deployMavenDesc: true
-    deployIvyDesc: true
+    deployMavenDesc: false
+    deployIvyDesc: false
     
 - task: JFrogPublishBuildInfo@1
   inputs:
