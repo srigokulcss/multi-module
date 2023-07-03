@@ -19,7 +19,7 @@ steps:
     artifactoryResolverService: 'arti'
     sourceRepo: 'sri-android-gradle-dev'
     artifactoryDeployerService: 'arti'
-    targetRepo: 'sri-android-gradle-dev'
+    targetRepo: 'sri-android-gradle-dev-local'
     useWrapper: true
     usesPlugin: true
     collectBuildInfo: true
