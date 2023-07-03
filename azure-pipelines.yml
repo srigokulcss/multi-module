@@ -33,8 +33,11 @@ steps:
     sourceRepo: 'sri-multi-modile-gradle-dev'
     artifactoryDeployerService: 'arti'
     targetRepo: 'sri-multi-modile-gradle-dev'
-    usesPlugin: false
-    useWrapper: false
+    usesPlugin: true
+    useWrapper: true
+    collectBuildInfo: true
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
     deployMavenDesc: false
     deployIvyDesc: false
     
